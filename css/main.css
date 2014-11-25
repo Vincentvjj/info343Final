@@ -142,7 +142,9 @@ nav a:visited {
     height: auto;
     margin-left: 30%;
 }
-
+.invalid-field {
+    border: 1px solid #FF0000;
+}
 .story {
     margin-bottom: 100px;
 }
@@ -153,7 +155,12 @@ nav a:visited {
     margin-right: 1em;
 }
 
+#About img {
+    max-height: 350px;
+    float: left;
+    margin-left: 1em;
+}
+
 #spanish-lang {
     display: none;
 }
-
