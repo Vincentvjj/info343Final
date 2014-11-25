@@ -146,3 +146,8 @@ nav a:visited {
     float: left;
     margin-right: 1em;
 }
+
+#spanish-lang {
+    display: none;
+}
+
