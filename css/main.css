@@ -1,0 +1,62 @@
+@import url(htttp://fonts.googleapis.com/css?family=Raleway:400,700);
+@import url(http://fonts.googleapis.com/css?family=Lato);
+
+body {
+    font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+header, section, footer {
+    padding: 1em;
+}
+
+
+h1, h2, h3, h4 {
+    font-family: 'Raleway', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+.jumbotron {
+    color: #FFF;
+    text-align: right;
+}
+
+nav {
+    font-size: 125%;
+    background-color: #000;
+    border-radius: 6px;
+    padding: 0.5em;
+}
+
+nav ul {
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+nav li {
+    display: inline-block;
+    list-style: none;
+    margin-right: 1em;
+}
+
+nav a:link,
+nav a:visited {
+    color: #269abc;
+}
+
+.nav-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 0;
+    box-shadows: 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.nav-placeholder {
+    display: none;
+}
+
+#Home {
+    background-color: #c0a16b;
+    overflow: auto;
+}
