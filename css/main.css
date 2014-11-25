@@ -142,3 +142,8 @@ nav a:visited {
     height: 300px;
     margin-left: 30%;
 }
+
+#spanish-lang {
+    display: none;
+}
+
