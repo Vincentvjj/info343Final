@@ -128,3 +128,7 @@ nav a:visited {
     float: left;
     margin-right: 1em;
 }
+#methods_paper {
+    text-align: center;
+    background-position: center;
+}
