@@ -140,7 +140,9 @@ nav a:visited {
     height: auto;
     margin-left: 30%;
 }
-
+.invalid-field {
+ border: 1px solid #FF0000;
+}
 .story {
     padding-top: 3em;
     margin-bottom: 100px;
@@ -155,4 +157,3 @@ nav a:visited {
 #spanish-lang {
     display: none;
 }
-
