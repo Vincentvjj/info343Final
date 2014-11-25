@@ -1,7 +1,9 @@
 /**
  * Created by emnetgossaye on 11/24/14.
+
  */
 "use strict";
+
 
 $(document).ready(function() {
     var nav = $('nav');
