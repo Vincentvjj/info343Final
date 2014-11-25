@@ -34,6 +34,7 @@ nav li {
     display: inline-block;
     list-style: none;
     margin-right: 1em;
+    margin-left: 3em;
 }
 
 nav a:link,
@@ -89,18 +90,19 @@ nav a:visited {
     display: none;
     margin: 0;
     padding: 0;
-    width: 150px;
+    width: 180px;
     position: absolute;
     top: 56px;
     left: 0px;
+
     background: #9CA3DA;
+
 }
 
 .menu li:hover > ul{
     display: block;
 }
 .menu ul li{
-
     display: block;
     background: none;
     margin: 0;
@@ -117,4 +119,5 @@ nav a:visited {
 .menu ul li:hover > a{
     background-color: #9CA3DA;
     border-left: 3px solid #c9302c;
+
 }
