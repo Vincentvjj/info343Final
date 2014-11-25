@@ -11,14 +11,14 @@ header, section, footer {
     padding: 1em;
 }
 
-
 h1, h2, h3, h4 {
     font-family: 'Raleway', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
 .jumbotron {
-    color: #FFF;
+    background-color: lightskyblue;
     text-align: right;
+    padding: 1em;
 }
 
 nav {
@@ -63,6 +63,7 @@ nav a:visited {
 
 .menu {
     display: block;
+    margin-bottom: 10px;
 }
 
 .menu li{
@@ -122,6 +123,7 @@ nav a:visited {
 
 #methods img {
     max-height: 350px;
+    max-width: 400px;
     float: left;
     margin-right: 1em;
 }
@@ -142,7 +144,6 @@ nav a:visited {
 }
 
 .story {
-    padding-top: 3em;
     margin-bottom: 100px;
 }
 
