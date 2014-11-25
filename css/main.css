@@ -23,8 +23,6 @@ h1, h2, h3, h4 {
 nav {
     font-size: 125%;
     background-color: #000;
-    border-radius: 6px;
-    padding: 0.5em;
 }
 
 nav ul {
@@ -59,4 +57,64 @@ nav a:visited {
 #Home {
     background-color: #c0a16b;
     overflow: auto;
+}
+
+.menu {
+    display: block;
+}
+
+.menu li{
+    display: inline-block;
+    position: relative;
+    z-index: 100;
+}
+
+
+.menu li a {
+    font-weight: 600;
+    text-decoration: none;
+    padding: 12px;
+    display: block;
+    color: #fff;
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.menu li a:hover,
+.menu li:hover > a{
+    color: #fff;
+    background: #bbb;
+}
+
+.menu ul{
+    display: none;
+    margin: 0;
+    padding: 0;
+    width: 150px;
+    position: absolute;
+    top: 56px;
+    left: 0px;
+    background: #9CA3DA;
+}
+
+.menu li:hover > ul{
+    display: block;
+}
+.menu ul li{
+
+    display: block;
+    background: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li a{
+    font-size: 12px;
+    display: block;
+
+}
+
+.menu ul li a:hover,
+.menu ul li:hover > a{
+    background-color: #9CA3DA;
+    border-left: 3px solid #c9302c;
 }
