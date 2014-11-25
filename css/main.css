@@ -132,3 +132,12 @@ nav a:visited {
     text-align: center;
     background-position: center;
 }
+#translated-versions {
+    text-align: center;
+    background-position: center;
+}
+#carousel-example-generic {
+    border-left: 40%;
+    width: 300px;
+    height: 300px;
+}
