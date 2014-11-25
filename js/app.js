@@ -6,6 +6,7 @@
 
 
 $(document).ready(function() {
+
     var nav = $('nav');
     var navTop = nav.offset().top;
     var navHeight = nav.outerHeight();
@@ -17,7 +18,7 @@ $(document).ready(function() {
 
         if (scrollPos > navTop) {
             nav.addClass('nav-fixed');
-            nav.PlaceHolder.show();
+            navPlaceHolder.show();
         }
         else {
             nav.removeClass('nav-fixed');
@@ -79,7 +80,30 @@ $(document).ready(function() {
             return validation;
         }
     };
+    var slideSwitch = $("[name='my-checkbox']");
+
+    slideSwitch.bootstrapSwitch('onText', 'English');
+    slideSwitch.bootstrapSwitch('offText', 'Spanish');
+    slideSwitch.on('switchChange.bootstrapSwitch', function(event, state) {
+        if(state) {
+            $('#english-lang').css('display', 'block');
+            $('#spanish-lang').css('display', 'none');
+           
+            //show english
+        }
+
+        else {
+            $('#english-lang').css('display', 'none');
+            $('#spanish-lang').css('display', 'block');
+            //show spanish
+        }
+
+
+    });
 });
 $('.carousel').carousel({
-        interval: 3000
+    interval: 3000
 })
+
+
+
