@@ -137,12 +137,17 @@ nav a:visited {
 #carousel-example-generic {
     border-left: 40%;
     width: 400px;
-    height: 300px;
+    height: auto;
     margin-left: 30%;
 }
 
+.story {
+    padding-top: 3em;
+    margin-bottom: 100px;
+}
+
 .story img {
-    max-height: 350px;
+    max-height: 300px;
     float: left;
     margin-right: 1em;
 }
