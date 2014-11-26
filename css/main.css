@@ -24,6 +24,7 @@ h1, h2, h3, h4 {
 nav {
     font-size: 125%;
     background-color: #000;
+
 }
 
 nav ul {
@@ -163,4 +164,18 @@ nav a:visited {
 
 #spanish-lang {
     display: none;
+}
+
+footer {
+  position: fixed;
+  bottom: 10px;
+  right: 50px;
+  width: 100px;
+  padding: 0px;
+  border: 1px solid #ccc;
+  background: #f7f7f7;
+  color: #333;
+  text-align: center;
+  cursor: pointer;
+  display: none;
 }

@@ -11,12 +11,22 @@ $(document).ready(function() {
     var navTop = nav.offset().top;
     var navHeight = nav.outerHeight();
     var navPlaceHolder = $('.nav-placeholder');
+    var slideSwitch = $("[name='my-checkbox']");
+
     navPlaceHolder.height(navHeight);
 
     $(window).scroll(function() {
         var scrollPos = $(this).scrollTop();
 
+        if(scrollPos != 0) {
+            $('footer').fadeIn();
+        }
+        else {
+            $('footer').fadeOut();
+        }
+
         if (scrollPos > navTop) {
+            
             nav.addClass('nav-fixed');
             navPlaceHolder.show();
         }
@@ -80,26 +90,31 @@ $(document).ready(function() {
             return validation;
         }
     };
-    var slideSwitch = $("[name='my-checkbox']");
+    
+    if(slideSwitch.length == 0) {
+        return;
+    }
 
-    slideSwitch.bootstrapSwitch('onText', 'English');
-    slideSwitch.bootstrapSwitch('offText', 'Spanish');
-    slideSwitch.on('switchChange.bootstrapSwitch', function(event, state) {
-        if(state) {
-            $('#english-lang').css('display', 'block');
-            $('#spanish-lang').css('display', 'none');
-           
-            //show english
-        }
+    else {
+        slideSwitch.bootstrapSwitch('onText', 'English');
+        slideSwitch.bootstrapSwitch('offText', 'Spanish');
+        slideSwitch.on('switchChange.bootstrapSwitch', function(event, state) {
+            if(state) {
+                $('#english-lang').css('display', 'block');
+                $('#spanish-lang').css('display', 'none');
+                //show english
+            }
 
-        else {
-            $('#english-lang').css('display', 'none');
-            $('#spanish-lang').css('display', 'block');
-            //show spanish
-        }
+            else {
+                $('#english-lang').css('display', 'none');
+                $('#spanish-lang').css('display', 'block');
+                //show spanish
+            }
 
+        });
+    }
 
-    });
+    
 });
 $('.carousel').carousel({
     interval: 3000
