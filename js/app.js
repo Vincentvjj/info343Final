@@ -30,7 +30,11 @@ $(document).ready(function() {
         }
     });
 
-    document.getElementById("contact-form").addEventListener("submit", onSubmit);
+
+
+    if(document.getElementById("contact-form")) {
+        document.getElementById("contact-form").addEventListener("submit", onSubmit);
+    }   
 
 
     if(slideSwitch.length == 0) {
