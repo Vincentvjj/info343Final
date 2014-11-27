@@ -29,62 +29,10 @@ $(document).ready(function() {
             navPlaceHolder.hide();
         }
     });
-    $('#submit-button').click(onSubmit);
-    
-    function onSubmit(eventObj) {
-        var name = $('#name-input').val();
-        var email = $('#email-input').val();
-        var subject = $('#subject-input').val();
-        var message = $('#message-input').val();
-        var valid = true;
-        try {
-            valid = validateForm(this);
-        }
-        catch(exception) {
-            valid = false; //stop form submission to see error
-        }
-        if (!valid && eventObj.preventDefault) {
-            eventObj.preventDefault(); 
-        }
-        //use new standard preventDefault() if available
-    
-        event.returnValue = valid; //for older browsers
-        return valid;
-        
-        function validateForm() {
-            var validation = true;
-            if(!name) {
-                validation = false;
-                $('#name-input').css('form-control invalid-field');
-            }
-            else {
-                $('#name-input').css('form-control');
-            }
-            if(!email) {
-                validation = false;
-                $('#email-input').css('form-control invalid-field');
-            }
-            else {
-                $('#email-input').css('form-control');
-            }
-            if(!subject) {
-                validation = false;
-                $('#subject-input').css('form-control invalid-field');
-            }
-            else {
-                $('#subject-input').css('form-control');
-            }
-            if(!message) {
-                validation == false;
-                $('#message-input').css('form-control invalid-field');
-            }
-            else {
-                $('#message-input').css('form-control');
-            }
-            return validation;
-        }
-    };
-    
+
+    document.getElementById("contact-form").addEventListener("submit", onSubmit);
+
+
     if(slideSwitch.length == 0) {
         return;
     }
@@ -105,15 +53,56 @@ $(document).ready(function() {
             else {
                 $('#english-lang').css('display', 'none');
                 $('#spanish-lang').css('display', 'block');
-                slideSwitch.bootstrapSwitch('labelText', 'English&#8592');
+                slideSwitch.bootstrapSwitch('labelText', '&#8592English');
                 //show spanish
             }
 
         });
     }
-
     
 });
+
+
+
+function onSubmit(evt) {
+    evt.returnValue = validateForm(this);
+    if (evt.returnValue == false && evt.preventDefault) {
+    evt.preventDefault();
+    }
+
+    return evt.returnValue;
+}
+
+
+function validateForm(form) {
+    var requiredFields = ['name', 'email', 'subject', 'message'];
+    var formValid = true;
+
+    for(var i = 0; i < requiredFields.length; i++) {
+        formValid &= validateRequiredField(form.elements[requiredFields[i]]);
+    }
+
+
+    return formValid;
+} 
+
+function validateRequiredField(field) {
+    var value = field.value.trim();
+    var valid = value.length > 0;
+    if(valid) {
+        field.className = "form-control";
+
+    }
+
+    else {
+        field.className = "form-control invalid-field";
+    }
+
+    return valid;
+
+
+}
+
 $('.carousel').carousel({
     interval: 3000
 })

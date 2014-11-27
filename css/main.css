@@ -178,3 +178,7 @@ footer {
   text-align: center;
   cursor: pointer;
 }
+
+.invalid-field {
+    border: 1px solid #FF0000;
+}
