@@ -18,13 +18,7 @@ $(document).ready(function() {
     $(window).scroll(function() {
         var scrollPos = $(this).scrollTop();
 
-        if(scrollPos != 0) {
-            $('footer').fadeIn();
-        }
-        else {
-            $('footer').fadeOut();
-        }
-
+       
         if (scrollPos > navTop) {
             
             nav.addClass('nav-fixed');
@@ -98,16 +92,20 @@ $(document).ready(function() {
     else {
         slideSwitch.bootstrapSwitch('onText', 'English');
         slideSwitch.bootstrapSwitch('offText', 'Spanish');
+        slideSwitch.bootstrapSwitch('labelText', 'Spanish&#8594;');
+
         slideSwitch.on('switchChange.bootstrapSwitch', function(event, state) {
             if(state) {
                 $('#english-lang').css('display', 'block');
                 $('#spanish-lang').css('display', 'none');
+                slideSwitch.bootstrapSwitch('labelText', 'Spanish&#8594');
                 //show english
             }
 
             else {
                 $('#english-lang').css('display', 'none');
                 $('#spanish-lang').css('display', 'block');
+                slideSwitch.bootstrapSwitch('labelText', 'English&#8592');
                 //show spanish
             }
 
