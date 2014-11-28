@@ -30,8 +30,6 @@ $(document).ready(function() {
         }
     });
 
-
-
     if(document.getElementById("contact-form")) {
         document.getElementById("contact-form").addEventListener("submit", onSubmit);
     }   
