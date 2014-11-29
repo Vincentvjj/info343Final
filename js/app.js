@@ -13,12 +13,12 @@ $(document).ready(function() {
     var navPlaceHolder = $('.nav-placeholder');
     var slideSwitch = $("[name='my-checkbox']");
 
+
+
     navPlaceHolder.height(navHeight);
 
     $(window).scroll(function() {
         var scrollPos = $(this).scrollTop();
-
-       
         if (scrollPos > navTop) {
             
             nav.addClass('nav-fixed');
@@ -33,6 +33,23 @@ $(document).ready(function() {
     if(document.getElementById("contact-form")) {
         document.getElementById("contact-form").addEventListener("submit", onSubmit);
     }   
+
+    if($("p a[href='#top']")) {
+        $('p a[href!="#top"]').attr('target', '_blank');
+        $("p a[href='#top']").click(function(eventObject) {
+            var targetElement = $(this.hash);
+            $('html, body').animate({
+                scrollTop: targetElement.offset().top - navHeight
+            }, 700)
+            eventObject.preventDefault(); 
+        });
+
+    } else {
+        return;
+    }
+
+
+        
 
 
     if(slideSwitch.length == 0) {
