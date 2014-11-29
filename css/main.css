@@ -138,7 +138,6 @@ nav a:visited {
     background-position: center;
 }
 #translated-versions {
-    text-align: center;
     background-position: center;
 }
 
@@ -186,4 +185,19 @@ footer {
 
 .invalid-field {
     border: 1px solid #FF0000;
+}
+
+#translated-versions h1{
+    font-size: 60px;
+    font-weight: bold;
+}
+
+#pic2refl, #pic4refl, #pic5refl, #pic7refl, #pic2refls, #pic4refls, #pic5refls, #pic7refls {
+    float: left;
+    margin: 8px;
+}
+
+#pic6refl, #pic6refls {
+    float: right;
+    margin: 8px;
 }
