@@ -157,7 +157,7 @@ function validateRequiredField(field) {
 
 $('.carousel').carousel({
     interval: 3000
-})
+});
 
 
 
