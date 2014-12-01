@@ -6,7 +6,16 @@ body {
     font-size: 18px;
     background-color: lightskyblue;
 }
-
+#willbesent {
+    text-align: right;
+}
+#cactus {
+    height: 150px;
+    length: 400px;
+}
+#cards {
+    text-align: center;
+}
 header, section, footer {
     padding: 1em;
 }
