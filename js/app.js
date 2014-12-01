@@ -30,6 +30,39 @@ $(document).ready(function() {
         }
     });
 
+
+    var angle = 0;
+
+
+    // $('#left').click(function() {
+    //     angle = angle - 45; 
+
+    //     document.getElementById('left').css('style', "-webkit- 
+    //         transform: rotateY("+ angle +"deg); -moz-
+    //         transform: rotateY("+ angle +"deg); 
+    //         transform: rotateY("+ angle +"deg);"
+    //     );
+    // });
+        
+        
+    
+
+    $('#right').click(function() {
+        angle = angle + 45; 
+        $('#spinner').css('transform', "rotateY("+ angle +"deg)");
+    });
+
+    $('#left').click(function() {
+        angle = angle - 45; 
+        $('#spinner').css('transform', "rotateY("+ angle +"deg)");
+    });
+
+
+
+
+
+
+
     if(document.getElementById("contact-form")) {
         document.getElementById("contact-form").addEventListener("submit", onSubmit);
     }   
