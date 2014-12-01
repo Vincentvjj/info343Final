@@ -4,7 +4,7 @@
 body {
     font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
     font-size: 18px;
-    background-color: #eef;
+    background-color: #eef7fa;
 }
 #willbesent {
     text-align: right;
@@ -21,7 +21,6 @@ header, section, footer {
 }
 
 .home h1{
-
     font-size: 58px;
 }
 
@@ -30,7 +29,7 @@ h1, h2, h3, h4 {
 }
 
 .jumbotron {
-    background-color: lightskyblue;
+    background-color: #eef7fa;
     text-align: right;
     padding: 1em;
 }
@@ -38,7 +37,6 @@ h1, h2, h3, h4 {
 nav {
     font-size: 125%;
     background-color: #000;
-
 }
 
 nav ul {
@@ -229,7 +227,6 @@ footer {
     position: absolute; 
     left: 30%;
     transform-origin: 50% 50% -500px;
-    outline: 1px solid transparent; 
 }
 #spinner img:nth-child(1) { 
     transform:rotateY(0deg); 

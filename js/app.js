@@ -42,8 +42,6 @@ $(document).ready(function() {
     });
 
 
-
-
     if(document.getElementById("contact-form")) {
         document.getElementById("contact-form").addEventListener("submit", onSubmit);
     }   
@@ -54,17 +52,13 @@ $(document).ready(function() {
             var targetElement = $(this.hash);
             $('html, body').animate({
                 scrollTop: targetElement.offset().top - navHeight
-            }, 700)
+            }, 700);
             eventObject.preventDefault(); 
         });
 
     } else {
         return;
     }
-
-
-        
-
 
     if(slideSwitch.length == 0) {
         return;
@@ -135,10 +129,10 @@ function validateRequiredField(field) {
 
 
 }
-
-$('.carousel').carousel({
-    interval: 3000
-});
-
+//
+//$('.carousel').carousel({
+//    interval: 3000
+//});
+//
 
 
