@@ -18,6 +18,7 @@ body {
 }
 
 #cards {
+    margin-top: 1.5%;
     text-align: center;
 }
 header, section, footer {
@@ -59,6 +60,10 @@ nav li {
 nav a:link,
 nav a:visited {
     color: #269abc;
+}
+
+.item {
+    height: 600px;
 }
 
 .nav-fixed {
