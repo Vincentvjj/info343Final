@@ -45,7 +45,7 @@ $(document).ready(function() {
     // });
         
         
-    
+
 
     $('#right').click(function() {
         angle = angle + 45; 
@@ -56,9 +56,6 @@ $(document).ready(function() {
         angle = angle - 45; 
         $('#spinner').css('transform', "rotateY("+ angle +"deg)");
     });
-
-
-
 
 
 
