@@ -12,39 +12,23 @@ $(document).ready(function() {
     var navHeight = nav.outerHeight();
     var navPlaceHolder = $('.nav-placeholder');
     var slideSwitch = $("[name='my-checkbox']");
-
-
-
     navPlaceHolder.height(navHeight);
 
-    $(window).scroll(function() {
-        var scrollPos = $(this).scrollTop();
-        if (scrollPos > navTop) {
+    // $(window).scroll(function() {
+    //     var scrollPos = $(this).scrollTop();
+    //     if (scrollPos > navTop) {
             
-            nav.addClass('nav-fixed');
-            navPlaceHolder.show();
-        }
-        else {
-            nav.removeClass('nav-fixed');
-            navPlaceHolder.hide();
-        }
-    });
-
-
-    var angle = 0;
-
-
-    // $('#left').click(function() {
-    //     angle = angle - 45; 
-
-    //     document.getElementById('left').css('style', "-webkit- 
-    //         transform: rotateY("+ angle +"deg); -moz-
-    //         transform: rotateY("+ angle +"deg); 
-    //         transform: rotateY("+ angle +"deg);"
-    //     );
+    //         nav.addClass('nav-fixed');
+    //         navPlaceHolder.show();
+    //     }
+    //     else {
+    //         nav.removeClass('nav-fixed');
+    //         navPlaceHolder.hide();
+    //     }
     // });
-        
-        
+
+
+    var angle = 0;  
 
 
     $('#right').click(function() {
