@@ -24,24 +24,7 @@ Enjoy responsibly!
    Base styles: opinionated defaults
    ========================================================================== */
 
-html,
-button,
-input,
-select,
-textarea {
-    color: #222;
-}
 
-body {
-    font-size: 1em;
-    line-height: 1.4;
-}
-
-/*
- * Remove text-shadow in selection highlight: h5bp.com/i
- * These selection rule sets have to be separate.
- * Customize the background color to match your design.
- */
 
 ::-moz-selection {
     background: #b3d4fc;
@@ -185,14 +168,14 @@ main {
 }
 
 /* Slide 1 */
-#slide-1 .bcg {background-image:url('../img/bcg_slide-1.jpg')}
+#slide-1 .bcg {background-image:url('../img/basketbal_court.jpg')}
 #slide-1 .hsContent {
     bottom: 200px;
     top: auto;
 }
 
 /* Slide 2 */
-#slide-2 .bcg {background-image:url('../img/bcg_slide-2.jpg')}
+#slide-2 .bcg {background-image:url('../img/my_friend.jpg')}
 #slide-2 .hsContent {
     margin-left: -450px;
     bottom: 200px;
@@ -200,7 +183,7 @@ main {
 }
 
 /* Slide 3 */
-#slide-3 .bcg {background-image:url('../img/bcg_slide-3.jpg')}
+#slide-3 .bcg {background-image:url('../img/my_haircut.jpg')}
 #slide-3 .hsContent {
     margin-left: -239px;
 }
@@ -210,7 +193,7 @@ main {
 }
 
 /* Slide 4 */
-#slide-4 .bcg {background-image:url('../img/bcg_slide-4.jpg')}
+#slide-4 .bcg {background-image:url('../img/landscape.jpg')}
 #slide-4 .hsContent {
     margin-left: -450px;
 }
