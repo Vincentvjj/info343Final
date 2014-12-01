@@ -4,7 +4,7 @@
 body {
     font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
     font-size: 18px;
-    background-color: lightskyblue;
+    background-color: #eef;
 }
 #willbesent {
     text-align: right;
@@ -67,9 +67,6 @@ nav a:visited {
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
 }
 
-.nav-placeholder {
-    display: none;
-}
 
 #Home {
     background-color: #c0a16b;
@@ -215,11 +212,9 @@ footer {
 #carousel { 
     height: 350px;
     perspective: 1300px; 
-    background: #79b9e0;
     padding-top: 2%;
-    font-size:0; 
     margin-bottom: 3rem; 
-    overflow: hidden; 
+
 }
 #spinner { 
     transform-style: preserve-3d; 
@@ -271,8 +266,40 @@ footer {
     position: relative; 
     margin-top: -6rem; 
     border-bottom: none; 
-    line-height: 0; }
+    line-height: 0; 
+}
 
-#carousel ~ span:hover { color: #888; cursor: pointer; }
+#carousel ~ span:hover {
+    color: #888; 
+    cursor: pointer; 
+}
 
+.image-links a img {
+    margin-right: 5px;
+    border: 2px solid black;
+}
 
+.image-links a {
+    padding: 0;
+}
+
+.links h2 {
+    font-size: 1.2em;
+    line-height: 1.5em;
+    display: inline-block;
+    font-weight: 700;
+    color: #c75b12;
+    background: #ebebeb;
+    padding: 3px 7px;
+    min-width: 200px;
+    margin: 0;
+}
+
+.caption h2 {
+    font-weight: 500;
+    padding: 5px;
+    font-size: 1em;
+    background: none;
+    line-height: 1em;
+    display: inherit;
+}
