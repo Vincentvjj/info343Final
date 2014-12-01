@@ -146,15 +146,17 @@ nav a:visited {
     height: auto;
     margin-left: 30%;
 }
+
 .invalid-field {
     border: 1px solid #FF0000;
 }
+
 .story {
     margin-bottom: 100px;
 }
 
 .story img {
-    max-height: 300px;
+    max-height: 400px;
     float: left;
     margin-right: 1em;
 }
