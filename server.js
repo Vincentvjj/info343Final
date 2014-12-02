@@ -29,7 +29,7 @@ app.use(function(err, req, res, next) {
     res.status(err.statusCode || 500).json({message: err.message || err.toString()});
 });
 
-app.get('/api/send', function (req, res) {
+app.get('Contact/api/send', function (req, res) {
     sendgrid.send({
         to: 'vinc3nt_joe@yahoo.com',
         from: req.query.from,
