@@ -77,7 +77,6 @@ $(document).ready(function() {
     $('#submit-button').click(submitEmail);
 
         function submitEmail(event) {
-
             event.preventDefault();
             // email info here!
             var data = {
@@ -86,7 +85,7 @@ $(document).ready(function() {
                 text: $('#contact-form input[name="message"]').val()
             };
 
-            $.ajax('api/send', {
+            $.ajax('/api/send', {
                 'data': data,
                 success: submitted,
                 error: failed
