@@ -86,7 +86,6 @@ $(document).ready(function() {
     $('#submit-button').click(submitEmail);
 
         function submitEmail(event) {
-            console.log("asdas");
             event.preventDefault();
             // email info here!
             var data = {
@@ -105,6 +104,7 @@ $(document).ready(function() {
         function submitted() {
             $('#contact-form input').each(function(index, value) {
                 $(this).val('');
+                $('#message-input').val('');
             });
 
             $('#successalert').slideDown(400, function() {
