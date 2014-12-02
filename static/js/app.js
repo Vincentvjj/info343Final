@@ -86,15 +86,13 @@ $(document).ready(function() {
     $('#submit-button').click(submitEmail);
 
         function submitEmail(event) {
-            console.log("asdas");
             event.preventDefault();
             // email info here!
             var data = {
                 from: $('#contact-form input[name="email"]').val(),
                 subject: $('#contact-form input[name="subject"]').val(),
-                text: $('#message-input').val()
+                text: $('#message-input').val() + '\n' + '\n' + '--Sent from Fotohistorias-'
             };
-            console.log(data);
 
             $.ajax('api/send', {
                 'data': data,
@@ -106,6 +104,7 @@ $(document).ready(function() {
         function submitted() {
             $('#contact-form input').each(function(index, value) {
                 $(this).val('');
+                $('#message-input').val('');
             });
 
             $('#successalert').slideDown(400, function() {
