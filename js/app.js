@@ -102,7 +102,7 @@ function onSubmit(evt) {
 
 
 function validateForm(form) {
-    var requiredFields = ['name', 'email', 'subject', 'message'];
+    var requiredFields = ['email', 'subject', 'message'];
     var formValid = true;
 
     for(var i = 0; i < requiredFields.length; i++) {
