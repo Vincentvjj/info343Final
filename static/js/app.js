@@ -95,7 +95,7 @@ $(document).ready(function() {
             event.preventDefault();
             // email info here!
             var data = {
-                from: 'bi bane',//$('#submitForm input[name="email"]').val(),
+                from: 'bibane@yahoo.com',//$('#submitForm input[name="email"]').val(),
                 subject: 'bibaisd',//$('#submitForm input[name="subject"]').val(),
                 text: 'Helloworld'//$('#submitForm input[name="message"]').val()
             };
