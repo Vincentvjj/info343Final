@@ -32,7 +32,7 @@ app.use(function(err, req, res, next) {
 app.get('/api/send', function (req, res) {
     sendgrid.send({
         to: 'vinc3nt_joe@yahoo.com',
-        from: 'info343.ischool.uw.edu',
+        from: req.query.from,
         subject: req.query.subject,
         text: req.query.text
     }, function(err, json) {
