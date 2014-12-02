@@ -94,7 +94,6 @@ $(document).ready(function() {
                 subject: $('#contact-form input[name="subject"]').val(),
                 text: $('#message-input').val() + '\n' + '\n' + '--Sent from Fotohistorias-'
             };
-            console.log(data);
 
             $.ajax('api/send', {
                 'data': data,
