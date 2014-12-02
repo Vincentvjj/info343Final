@@ -17,6 +17,17 @@ $(document).ready(function() {
 
     var angle = 0;  
 
+    $('#carousel').bind('keypress', function(e) {
+        var code = e.keyCode || e.which;
+        if(code == 37) { //Enter keycode
+           angle = angle - 45; 
+           $('#spinner').css('transform', "rotateY("+ angle +"deg)");
+        }
+        if(code == 39) {
+            angle = angle + 45; 
+            $('#spinner').css('transform', "rotateY("+ angle +"deg)");
+        }
+    });
 
     $('#right').click(function() {
         angle = angle + 45; 
@@ -84,6 +95,7 @@ $(document).ready(function() {
                 from: $('#submitForm input[name="email"]').val(),
                 subject: $('#submitForm input[name="subject"]').val(),
                 text: $('#submitForm input[name="message"]').val()
+            };
             event.preventDefault();
             // email info here!
             var data = {
