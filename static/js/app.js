@@ -77,16 +77,17 @@ $(document).ready(function() {
     $('#submit-button').click(submitEmail);
 
         function submitEmail(event) {
+            console.log($('#contact-form input[name="msg"]'));
             event.preventDefault();
             // email info here!
             var data = {
                 from: $('#contact-form input[name="email"]').val(),
                 subject: $('#contact-form input[name="subject"]').val(),
-                text: $('#contact-form input[name="message"]').val()
+                text: $('#contact-form input[name="msg"]').val()
             };
 
             console.log(data);
-            
+
             $.ajax('api/send', {
                 'data': data,
                 success: submitted,
