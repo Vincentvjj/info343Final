@@ -20,6 +20,7 @@ app.use(bodyParser.json());
 app.use(express.static(__dirname + '/js'));
 app.use(express.static(__dirname + '/css'));
 app.use(express.static(__dirname + '/Contact'));
+app.use(express.static(__dirname + '/../info343Final'));
 
 //finally, add an error handler that sends back the error info as JSON
 app.use(function(err, req, res, next) {
