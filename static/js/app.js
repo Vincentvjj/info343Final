@@ -77,7 +77,6 @@ $(document).ready(function() {
     $('#submit-button').click(submitEmail);
 
         function submitEmail(event) {
-            console.log($('#contact-form input[name="msg"]'));
             event.preventDefault();
             // email info here!
             var data = {
