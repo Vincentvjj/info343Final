@@ -55,11 +55,11 @@ $(document).ready(function() {
         });
 
     } else {
-        console.log("cant find it");
+        //return
     }
 
     if(slideSwitch.length == 0) {
-        console.log("cant find it");
+        //return
     } else {
         slideSwitch.bootstrapSwitch('onText', 'English');
         slideSwitch.bootstrapSwitch('offText', 'Spanish');
@@ -85,6 +85,10 @@ $(document).ready(function() {
     
 
 
+    // notes: it always has error oin the line 93, I wondered if it is caused by the undefined text field for text. the heroku-dome
+    // thing has the same error with it. 
+
+
     $('#submit-button').click(submitEmail);
 
         function submitEmail(event) {
@@ -101,8 +105,10 @@ $(document).ready(function() {
             var data = {
                 from: $('#contact-form input[name="email"]').val(),
                 subject: $('#contact-form input[name="subject"]').val(),
-                text: $('#contact-form input[name="message"]').val()
+                text: $('#contact-form input[name="msg"]').val()
             };
+
+            console.log(data);
 
             $.ajax('api/send', {
                 'data': data,

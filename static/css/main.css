@@ -167,6 +167,7 @@ nav a:visited {
 
 .story {
     margin-bottom: 100px;
+    padding: 1em;
 }
 
 .story img {
@@ -257,6 +258,7 @@ footer {
 .alert, #delete {
     display: none;
 }
+<<<<<<< HEAD
 #researchbox {
     display: none;
 }
@@ -367,4 +369,15 @@ footer {
         border-left: 3px solid #c9302c;
     }
 
+}
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+}
+
+section .container {
+    font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 18px;
+    background-image: url(../img/noisebp.png);
+    margin: 0.5em;
 }
