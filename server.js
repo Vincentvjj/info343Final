@@ -8,8 +8,7 @@
 
 var express = require('express');
 var bodyParser = require('body-parser');
-// var sendgrid = require('sendgrid')(process.env.SENDGRID_USERNAME, process.env.SENDGRID_PASSWORD);
-
+var sendgrid = require('sendgrid')(process.env.SENDGRID_USERNAME, process.env.SENDGRID_PASSWORD);
 
 //create an express application
 var app = express();
@@ -30,23 +29,23 @@ app.use(function(err, req, res, next) {
 });
 
 app.get('/api/send', function(req, res) {
-    // sendgrid.send({
-    //     to: 'vinc3nt_joe@yahoo.com',
-    //     from: req.query.to,
-    //     subject: req.query.subject,
-    //     text: req.query.text
-    // }, function(err, json) {
-    //     if(err) {
-    //         res.status(500).send('internal serve error!');
-    //     }
-    //     else {
-    //         res.status(200).send('everything went well, email sent!');
-    //     }
-    // });
+    sendgrid.send({
+        to: 'vinc3nt_joe@yahoo.com',
+        from: req.query.to,
+        subject: req.query.subject,
+        text: req.query.text
+    }, function(err, json) {
+        if(err) {
+            res.status(500).send('internal serve error!');
+        }
+        else {
+            res.status(200).send('everything went well, email sent!');
+        }
+    });
 });
 
 //start the web server
-var port = process.env.YOUR_PORT || process.env.PORT || 5000;
+var port = process.env.YOUR_PORT || process.env.PORT || 8080;
 var host = process.env.YOUR_HOST || '0.0.0.0';
 
 var server = app.listen(port, host, function() {
