@@ -85,7 +85,9 @@ $(document).ready(function() {
                 text: $('#contact-form input[name="message"]').val()
             };
 
-            $.ajax('/api/send', {
+            console.log(data);
+            
+            $.ajax('api/send', {
                 'data': data,
                 success: submitted,
                 error: failed
