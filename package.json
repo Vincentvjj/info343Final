@@ -5,8 +5,8 @@
   "main": "server.js",
   "author": "Vincent Jonany",
   "contributors": [{ 
-    "name": "Dave Stearns",
-    "email": "dlsinfo@uw.edu"
+    "name": "Vincent Jonany",
+    "email": "jonanv@uw.edu"
   }],
   "license": "MIT",
   "dependencies": {

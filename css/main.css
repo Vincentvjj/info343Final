@@ -326,3 +326,7 @@ footer {
     opacity: 0.8;
 
 }
+
+.alert, #delete {
+    display: none;
+}
