@@ -46,7 +46,7 @@ app.get('/api/send', function(req, res) {
 });
 
 //start the web server
-var port = process.env.YOUR_PORT || process.env.PORT || 5000;
+var port = process.env.YOUR_PORT || process.env.PORT || 8080;
 var host = process.env.YOUR_HOST || '0.0.0.0';
 
 var server = app.listen(port, host, function() {
