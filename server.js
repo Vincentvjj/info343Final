@@ -37,7 +37,7 @@ app.get('/Contact/api/send', function (req, res) {
         text: req.query.text
     }, function(err, json) {
         if(err) {
-            res.status(500).send('internal serve error!');
+            res.status(500).send('internal serve error!' + err);
         }
         else {
             res.status(200).send('everything went well, email sent!');
