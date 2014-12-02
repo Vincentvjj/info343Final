@@ -10,6 +10,7 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var sendgrid = require('sendgrid')(process.env.SENDGRID_USERNAME, process.env.SENDGRID_PASSWORD);
 
+
 //create an express application
 var app = express();
 
@@ -18,7 +19,6 @@ app.use(bodyParser.json());
 
 //serve static files from the /static sub-directory
 app.use(express.static(__dirname + '/static'));
-
 
 //finally, add an error handler that sends back the error info as JSON
 app.use(function(err, req, res, next) {
@@ -29,10 +29,11 @@ app.use(function(err, req, res, next) {
     res.status(err.statusCode || 500).json({message: err.message || err.toString()});
 });
 
-app.get('/api/send', function (req, res) {
+app.get('/api/send', function (req, res){
+    // do something here
     sendgrid.send({
         to: 'vinc3nt_joe@yahoo.com',
-        from: 'info343.ischool.uw.edu',
+        from: req.query.to,
         subject: req.query.subject,
         text: req.query.text
     }, function(err, json) {
