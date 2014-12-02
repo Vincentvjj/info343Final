@@ -101,7 +101,7 @@ $(document).ready(function() {
                 text: $('#submitForm input[name="message"]').val()
             };
 
-            $.ajax('/api/send', {
+            $.ajax('api/send', {
                 'data': data,
                 success: submitted,
                 error: failed
