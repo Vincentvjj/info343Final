@@ -82,11 +82,6 @@ $(document).ready(function() {
 
         });
     }
-    
-
-    // notes: it always has error oin the line 93, I wondered if it is caused by the undefined text field for text. the heroku-dome
-    // thing has the same error with it. 
-
 
     $('#submit-button').click(submitEmail);
 
@@ -97,7 +92,7 @@ $(document).ready(function() {
             var data = {
                 from: $('#contact-form input[name="email"]').val(),
                 subject: $('#contact-form input[name="subject"]').val(),
-                text: $('#contact-form input[name="msg"]').val()
+                text: $('#message-input').val
             };
             console.log(data);
 
