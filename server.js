@@ -17,7 +17,9 @@ var app = express();
 app.use(bodyParser.json());
 
 //serve static files from the /static sub-directory
-app.use(express.static(__dirname + '/static'));
+app.use(express.static(__dirname + '/js'));
+app.use(express.static(__dirname + '/css'));
+app.use(express.static(__dirname + '/Contact'));
 
 //finally, add an error handler that sends back the error info as JSON
 app.use(function(err, req, res, next) {
