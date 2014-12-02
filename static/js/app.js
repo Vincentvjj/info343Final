@@ -97,16 +97,8 @@ $(document).ready(function() {
             var data = {
                 from: $('#submitForm input[name="email"]').val(),
                 subject: $('#submitForm input[name="subject"]').val(),
-                text: $('#submitForm input[name="message"]').val()
+                text: 'Helloworld'//$('#submitForm input[name="message"]').val()
             };
-            event.preventDefault();
-            // email info here!
-            var data = {
-                from: $('#contact-form input[name="email"]').val(),
-                subject: $('#contact-form input[name="subject"]').val(),
-                text: $('#contact-form input[name="msg"]').val()
-            };
-
             console.log(data);
 
             $.ajax('api/send', {
