@@ -92,7 +92,7 @@ $(document).ready(function() {
             var data = {
                 from: $('#contact-form input[name="email"]').val(),
                 subject: $('#contact-form input[name="subject"]').val(),
-                text: $('#message-input').val()
+                text: $('#message-input').val() + '\n' + '\n' + '--Sent from Fotohistorias-'
             };
             console.log(data);
 
