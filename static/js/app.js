@@ -7,6 +7,7 @@
 
 $(document).ready(function() {
 
+
     var nav = $('nav');
     var navTop = nav.offset().top;
     var navHeight = nav.outerHeight();
@@ -43,14 +44,12 @@ $(document).ready(function() {
         });
 
     } else {
-        return;
+        console.log("cant find it");
     }
 
     if(slideSwitch.length == 0) {
-        return;
-    }
-
-    else {
+        console.log("cant find it");
+    } else {
         slideSwitch.bootstrapSwitch('onText', 'English');
         slideSwitch.bootstrapSwitch('offText', 'Spanish');
         slideSwitch.bootstrapSwitch('labelText', 'Spanish&#8594;');
@@ -72,20 +71,19 @@ $(document).ready(function() {
 
         });
     }
-
-
+    
 
 
     $('#submit-button').click(submitEmail);
 
         function submitEmail(event) {
-            console.log("asdas");
+
             event.preventDefault();
             // email info here!
             var data = {
-                from: $('#submitForm input[name="email"]').val(),
-                subject: $('#submitForm input[name="subject"]').val(),
-                text: $('#submitForm input[name="message"]').val()
+                from: $('#contact-form input[name="email"]').val(),
+                subject: $('#contact-form input[name="subject"]').val(),
+                text: $('#contact-form input[name="message"]').val()
             };
 
             $.ajax('api/send', {
@@ -96,7 +94,7 @@ $(document).ready(function() {
         }
 
         function submitted() {
-            $('#submitForm input').each(function(index, value) {
+            $('#contact-form input').each(function(index, value) {
                 $(this).val('');
             });
 
