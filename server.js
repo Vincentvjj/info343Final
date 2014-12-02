@@ -8,7 +8,7 @@
 
 var express = require('express');
 var bodyParser = require('body-parser');
-// var sendgrid = require('sendgrid')(process.env.SENDGRID_USERNAME, process.env.SENDGRID_PASSWORD);
+var sendgrid = require('sendgrid')(process.env.SENDGRID_USERNAME, process.env.SENDGRID_PASSWORD);
 
 //create an express application
 var app = express();
@@ -18,6 +18,7 @@ app.use(bodyParser.json());
 
 //serve static files from the /static sub-directory
 app.use(express.static(__dirname + '/static'));
+
 
 //finally, add an error handler that sends back the error info as JSON
 app.use(function(err, req, res, next) {
@@ -29,19 +30,19 @@ app.use(function(err, req, res, next) {
 });
 
 app.get('/api/send', function (req, res) {
-    // sendgrid.send({
-    //     to: 'vinc3nt_joe@yahoo.com',
-    //     from: req.query.to,
-    //     subject: req.query.subject,
-    //     text: req.query.text
-    // }, function(err, json) {
-    //     if(err) {
-    //         res.status(500).send('internal serve error!');
-    //     }
-    //     else {
-    //         res.status(200).send('everything went well, email sent!');
-    //     }
-    // });
+    sendgrid.send({
+        to: 'vinc3nt_joe@yahoo.com',
+        from: req.query.from,
+        subject: req.query.subject,
+        text: req.query.text
+    }, function(err, json) {
+        if(err) {
+            res.status(500).send('internal serve error!');
+        }
+        else {
+            res.status(200).send('everything went well, email sent!');
+        }
+    });
 });
 
 //start the web server

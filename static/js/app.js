@@ -14,20 +14,6 @@ $(document).ready(function() {
     var slideSwitch = $("[name='my-checkbox']");
     navPlaceHolder.height(navHeight);
 
-    // $(window).scroll(function() {
-    //     var scrollPos = $(this).scrollTop();
-    //     if (scrollPos > navTop) {
-            
-    //         nav.addClass('nav-fixed');
-    //         navPlaceHolder.show();
-    //     }
-    //     else {
-    //         nav.removeClass('nav-fixed');
-    //         navPlaceHolder.hide();
-    //     }
-    // });
-
-
     var angle = 0;  
 
 
@@ -93,6 +79,7 @@ $(document).ready(function() {
     $('#submit-button').click(submitEmail);
 
         function submitEmail(event) {
+            console.log("asdas");
             event.preventDefault();
             // email info here!
             var data = {
@@ -128,9 +115,6 @@ $(document).ready(function() {
                 }, 2500)
             });
         }
-
-
-    
 });
 
 
