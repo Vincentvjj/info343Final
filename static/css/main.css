@@ -44,8 +44,6 @@ h1, h2, h3, h4 {
     padding: 1em;
 }
 
-
-
 .navbar-custom {
     background-color: black;
     color:#ffffff;
@@ -74,7 +72,11 @@ h1, h2, h3, h4 {
     text-decoration: none;
     background-color: #BBB;
 }
-      
+
+.navbar-custom .navbar-nav .open .dropdown:hover{
+    display: inline-block;
+
+}
 .navbar-custom .navbar-brand {
     font-size: 130%;
     background-color: black;
@@ -116,7 +118,6 @@ hr {
 }
 
 .navbar-custom .navbar-nav .open .dropdown-menu>li>a:hover,.navbar-custom .navbar-nav .open .dropdown-menu {
-    
     font-weight: 600;
     text-decoration: none;
     padding: 7px;

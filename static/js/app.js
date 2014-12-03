@@ -17,6 +17,7 @@ $(document).ready(function() {
 
     var angle = 0;  
 
+
     $('#carousel').bind('keypress', function(e) {
         var code = e.keyCode || e.which;
         if(code == 37) { //Enter keycode
