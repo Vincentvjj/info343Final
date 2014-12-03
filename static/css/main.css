@@ -70,7 +70,7 @@ nav a:visited {
     color: #fff;
     background: #bbb;
 }
-.menu li:hover > ul{
+.navbar li:hover > ul{
     display: inline;
 }
 .menu ul li a:hover,

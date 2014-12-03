@@ -18,24 +18,43 @@
             <p class="lead">Participatory Photography with Hispanic Immigrants</p>
         </header>
 
-        <nav>
-            <ul class="menu">
-                <li><a href="#Home">HOME</a></li>
-                <li><a href="#Research">RESEARCH &#9663</a>
-                    <ul>
-                        <li><a href="Research/Methods/index.html">Methods</a></li>
-                        <li><a href="Research/Reflections/index.html">Reflections</a></li>
+        <nav class="navbar navbar-default navbar-inverse" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <li class="active navbar-brand visible-xs-block hidden-md"><a href="#">HOME</a></li>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active hidden-xs"><a href="#">HOME <span class="sr-only"></span></a></li>
+                        <li class="dropdown">
+                            <a href="#Research" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                    aria-expanded="false">RESEARCH <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="Research/Methods/index.html">Methods</a></li>                                
+                                <li><a href="Research/Reflections/index.html">Reflections</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                    aria-expanded="false">STORIES <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="Stories/Chapin/chapin.html">Chapin</a></li>
+                                <li><a href="Stories/Maria/index.html">Maria</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="Contact/index.html">CONTACT</a></li>
+                        <li><a href="About/index.html">ABOUT</a></li>
                     </ul>
-                </li>
-                <li><a href="#">STORIES &#9663</a>
-                    <ul>
-                        <li><a href="Stories/Chapin/chapin.html">Chapin</a></li>
-                        <li><a href="Stories/Maria/index.html">Maria</a></li>
-                    </ul>
-                </li>
-                <li><a href="Contact/index.html">CONTACT</a></li>
-                <li><a href="About/index.html">ABOUT</a></li>
-            </ul>
+                </div>
+            </div>
         </nav>
 
         <div id="carousel">
@@ -55,8 +74,6 @@
 
 
         <section class="home">
-
-
             <h1>Fotohistorias</h1>
             <p>How do immigrant day laborers, recently deported immigrants, and prospective immigrants to the US reflect their values and culture through photos and stories? In particular, (immigrants = immigrant day laborers, recently deported immigrants, and prospective immigrants to the US):  What are the essential elements of everyday life for immigrants at the transition point of the US-Mexico border and in an established location such as Seattle? How are transience, identity, and culture reflected in the pictures taken and the stories told by immigrants? What are the tensions, benefits, trials, and rewards of the lives they lead? What changes depending on their current circumstance/situation? Do these factors vary by location, success or failure, time spent in one place, or other factors?</p>
 
