@@ -19,28 +19,51 @@
         <h1>Fotohistorias</h1>
         <p class="lead">Participatory Photography with Hispanic Immigrants</p>
     </header>
-    <nav>
-        <ul class="menu">
-            <li><a href="../../index.html">HOME</a></li>
-            <li><a href="#Research">RESEARCH &#9663</a>
-                <ul>
-                    <li><a href="../../Research/Methods/index.html">Methods</a></li>
-                    <li><a href="../../Research/Reflections/index.html">Reflections</a></li>
+
+    <nav class="navbar navbar-default navbar-inverse" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <li class="navbar-brand visible-xs-block hidden-md"><a href="#">Chapin</a></li>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../index.html">HOME <span class="sr-only"></span></a></li>
+                    <li class="dropdown">
+                        <a href="#Research" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                           aria-expanded="false">RESEARCH <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="../../Research/Methods/index.html">Methods</a></li>
+                            <li><a href="#">Reflections</a></li>
+                        </ul>
+                    </li>
+                    <li class="active dropdown">
+                        <a href="#Stories" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                           aria-expanded="false">STORIES <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Chapin</a></li>
+                            <li><a href="../../Stories/Maria/index.html">Maria</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../../Contact/index.html">CONTACT</a></li>
+                    <li><a href="../../About/index.html">ABOUT</a></li>
                 </ul>
-            </li>
-            <li><a href="#">STORIES &#9663</a>
-                <ul>
-                    <li><a href="../../Stories/Chapin/chapin.html">Chapin</a></li>
-                    <li><a href="../../Stories/Maria/index.html">Maria</a></li>
-                </ul>
-            </li>
-            <li><a href="../../Contact/index.html">CONTACT</a></li>
-            <li><a href="../../About/index.html">ABOUT</a></li>
-        </ul>
+            </div>
+        </div>
     </nav>
 
     <div class="parallax-window" data-ios-fix="false" data-android-fix="false">
-        <h3>Chapin's Story</h3>
+        <section style="padding-top: 0; padding-bottom: 0;">
+            <h3>Chapin's Story</h3>
+        </section>
+
         <section id="slide-1" class="container-fluid" data-parallax="scroll" data-speed="0.1">
             <h4>The Begining</h4>
             <p>So this first one is when you gave me the camera. I was with my friend and so we took some pictures that are
