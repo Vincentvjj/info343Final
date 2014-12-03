@@ -152,7 +152,10 @@ nav a:visited {
     width: 300px;
     height: 480px;
     margin-left: 1%;
-    float: left;
+    margin-right: auto;
+    margin-left: auto;
+
+    margin-bottom: 40px;
 }
 #title {
     text-align: center;
@@ -179,8 +182,8 @@ nav a:visited {
 
 #About img {
     max-height: 350px;
-    float: left;
-    margin-left: 1em;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 #spanish-lang {
@@ -268,6 +271,21 @@ footer {
 }
 
 @media (min-width: 992px) {
+
+    #About img {
+        max-height: 350px;
+        float: left;
+        margin-left: 1em;
+    }
+
+
+    #carousel-example-generic {
+        width: 300px;
+        height: 480px;
+        margin-left: 1%;
+        float: left;
+    }
+
     #researchbox {
         display: block;
     }
