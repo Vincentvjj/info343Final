@@ -127,12 +127,6 @@ hr {
     margin-top: 5px;
 }
 
-
-
-
-
-
-
 #Home {
     background-color: #c0a16b;
     overflow: auto;
@@ -225,9 +219,7 @@ footer {
 .image-links a {
     padding: 0;
 }
-#spanish-lang img, #english-lang img {
-    display: none;
-}
+
 .links h2 {
     font-size: 1.2em;
     line-height: 1.5em;
@@ -268,6 +260,10 @@ footer {
 }
 #left, #right {
     display: none;
+}
+
+.parallax-window section {
+    background-color: white;
 }
 
 @media (min-width: 992px) {
