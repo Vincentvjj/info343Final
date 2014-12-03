@@ -5,6 +5,7 @@ body {
     font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
     font-size: 18px;
     background-image: url(../img/noisebp.png);
+    padding-top: 50px;
 }
 
 #willbesent {
@@ -42,6 +43,11 @@ h1, h2, h3, h4 {
     height: 350px;
     text-align: right;
     padding: 1em;
+}
+
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
 }
 
 .navbar-custom {
@@ -386,13 +392,9 @@ footer {
     }
 
 }
-.parallax-window {
-    min-height: 400px;
-    background: transparent;
-}
+
 
 .container-fluid {
     font-family: 'Raleway', 'Helvetica Neue', Helvetica, sans-serif;
     font-size: 18px;
-    margin: 0.5em;
 }
