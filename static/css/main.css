@@ -116,6 +116,9 @@ h1, h2, h3, h4 {
     
 }
 
+.nav .open>a, .nav .open>a:hover, .nav .open>a:focus {
+    background-color: #BBB;
+}
 
 /*
 .dropdown .dropdown-menu {
@@ -290,6 +293,15 @@ footer {
 }
 
 @media (min-width: 992px) {
+
+    .nav .open>a, .nav .open>a:hover, .nav .open>a:focus {
+        background-color: #BBB;
+    }
+
+    .open>.dropdown-menu {
+        display: none;
+    }
+
 
     .navbar-custom .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
         margin-right: 2em; 
